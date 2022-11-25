@@ -1,0 +1,72 @@
+C:\Users\user>aws configure
+AWS Access Key ID [****************EYID]: AKIARWXHGOKEGPY7VXGV
+AWS Secret Access Key [****************SKEY]: 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
+Default region name [ap-southeast-1]: ap-southeast-1
+Default output format [json]: json
+
+C:\Users\user>aws ec2 describe-vpcs
+{
+    "Vpcs": [
+        {
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-0fd18fc9a66dcd47f",
+            "State": "available",
+            "VpcId": "vpc-0b4444233199d27a4",
+            "OwnerId": "117522723464",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-09771699d2f1af501",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+
+
+C:\Users\user>aws cloud9 create-environment-ec2 --name getting-started-1 --description "Getting started with AWS Cloud9." --instance-type t2.micro
+{
+    "environmentId": "d3214afefe774a2d9f4390de5f8d05d5"
+}
+
+
+C:\Users\user>aws configure
+AWS Access Key ID [****************VXGV]: AKIARWXHGOKENCK7OFWW
+AWS Secret Access Key [****************lb24]: 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
+Default region name [ap-southeast-1]: ap-southeast-1
+Default output format [json]: json
+
+C:\Users\user>aws ec2 describe-vpcs
+{
+    "Vpcs": [
+        {
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-0fd18fc9a66dcd47f",
+            "State": "available",
+            "VpcId": "vpc-0b4444233199d27a4",
+            "OwnerId": "117522723464",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-09771699d2f1af501",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+
+
+C:\Users\user>aws cloud9 create-environment-ec2 --name getting-started-1 --description "Getting started with AWS Cloud9." --instance-type t2.micro
+{
+    "environmentId": "98eb45ea4a0745dabc9b05bb6102701d"
+}
